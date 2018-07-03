@@ -16,7 +16,9 @@
     "bitcore-node": "./bin/bitcore-node"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha -R spec --recursive test"
+    "test": "NODE_ENV=test mocha -R spec --recursive test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "tags": [
     "bitcoin",
@@ -48,7 +50,8 @@
     "mkdirp": "0.5.0",
     "path-is-absolute": "^1.0.0",
     "socket.io": "^1.4.5",
-    "socket.io-client": "^1.4.5"
+    "socket.io-client": "^1.4.5",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -61,5 +64,6 @@
     "rimraf": "^2.4.2",
     "sinon": "^1.15.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
