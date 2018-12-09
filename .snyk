@@ -1,0 +1,49 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-ninja > path-array > array-index > debug:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bcoin > socket.io > socket.io-client > debug:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bcoin > socket.io-client > debug:
+        patched: '2018-12-09T03:16:25.685Z'
+  'npm:hoek:20180212':
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-gyp > request > hawk > hoek:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-ninja > request > hawk > hoek:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-gyp > request > hawk > boom > hoek:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-ninja > request > hawk > boom > hoek:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-gyp > request > hawk > sntp > hoek:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-ninja > request > hawk > sntp > hoek:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-ninja > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-12-09T03:16:25.685Z'
+  'npm:ms:20170412':
+    - bcoin > socket.io-client > debug > ms:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bcoin > socket.io > socket.io-client > debug > ms:
+        patched: '2018-12-09T03:16:25.685Z'
+  'npm:stringstream:20180511':
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-gyp > request > stringstream:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-ninja > request > stringstream:
+        patched: '2018-12-09T03:16:25.685Z'
+  'npm:tough-cookie:20170905':
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-gyp > request > tough-cookie:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-ninja > request > tough-cookie:
+        patched: '2018-12-09T03:16:25.685Z'
+  'npm:tunnel-agent:20170305':
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-gyp > request > tunnel-agent:
+        patched: '2018-12-09T03:16:25.685Z'
+    - bitcore-p2p > bcoin > leveldown > prebuild > node-ninja > request > tunnel-agent:
+        patched: '2018-12-09T03:16:25.685Z'
